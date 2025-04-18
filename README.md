@@ -1,4 +1,4 @@
-LightlyLumina - 暗光流明
+LumialyLumina - 暗光流明
 ===========
 
 > Fork of [Lumina](https://github.com/LeavesMC/Lumina) but with now with unofficial bukkit support.
