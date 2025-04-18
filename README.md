@@ -7,4 +7,4 @@ LightlyLumina - 暗光流明
 
 ## Special Thanks To:
 
-[LuminolMC/LightningLominol] (https://github.com/LuminolMC/LightningLuminol): I copied Bukkit patches from this project.
+[LuminolMC/LightingLuminol] (https://github.com/LuminolMC/LightingLuminol): I copied Bukkit patches from this project.
