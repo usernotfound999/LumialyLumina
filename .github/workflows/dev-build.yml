@@ -1,4 +1,4 @@
-name: Lumina Dev Build
+name: LumialyLumina Dev Build
 
 on:
   push:
@@ -23,10 +23,6 @@ jobs:
           add-job-summary: never
           generate-job-summary: false
           cache-read-only: false
-      - name: Setup Git Config
-        run: |
-          git config --global user.email "ci@leavesmc.org"
-          git config --global user.name "LeavesMC CI"
       - name: Apply Patches
         run: ./gradlew applyPatches
       - name: Create Leavesclip Jar
@@ -37,8 +33,8 @@ jobs:
             grep "${1}" gradle.properties | cut -d'=' -f2 | sed 's/\r//'
           }
           
-          jarName="LumialyLumina-leavesclip-$(prop version)-mojmap.jar"
-          mv build/libs/Lumina-leavesclip-"$(prop version)"-mojmap.jar "$jarName"
+          jarName="LumialyLumina-$(prop version)-mojmap.jar"
+          mv build/libs/LumialyLumina-"$(prop version)"-mojmap.jar "$jarName"
           echo "jar=$jarName" >> "$GITHUB_ENV"
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
