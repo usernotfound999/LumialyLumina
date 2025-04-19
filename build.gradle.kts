@@ -17,7 +17,6 @@ dependencies {
     remapper("net.fabricmc:tiny-remapper:0.8.6:fat")
     decompiler("org.quiltmc:quiltflower:1.9.0")
     leavesclip("org.leavesmc:leavesclip:2.0.1")
-    compileOnly("me.earthme.luminol:luminol-api:$VERSION")
 }
 
 subprojects {
