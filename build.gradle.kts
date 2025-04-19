@@ -17,6 +17,7 @@ dependencies {
     remapper("net.fabricmc:tiny-remapper:0.8.6:fat")
     decompiler("org.quiltmc:quiltflower:1.9.0")
     leavesclip("org.leavesmc:leavesclip:2.0.1")
+    compileOnly("me.earthme.luminol:luminol-api:$VERSION")
 }
 
 subprojects {
@@ -52,6 +53,7 @@ subprojects {
         maven("https://hub.spigotmc.org/nexus/content/groups/public/")
         maven("https://jitpack.io")
         maven("https://repo.codemc.io/repository/maven-public/")
+        maven("https://maven.moliatopia.icu/repository/maven-snapshots/")
     }
 
 }
