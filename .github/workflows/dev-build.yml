@@ -17,6 +17,10 @@ jobs:
         with:
           java-version: "21"
           distribution: "zulu"
+      - name: Setup Git Config
+        run: |
+          git config --global user.email "ci@lumialy.com"
+          git config --global user.name "LumialyLumina CI"
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
